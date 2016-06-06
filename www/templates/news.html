@@ -1,0 +1,36 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+    
+<ion-view view-title="新闻详情" hide-back-button="false" style="background-color:#DDE1EE;">
+  <ion-nav-buttons side="left">
+    <button class="button button-clear icon ion-ios-arrow-back" ng-click="back()"></button>
+  </ion-nav-buttons>
+  
+  
+  <ion-content scroll="false">
+
+    this is a news content!
+
+    <br>
+    <br>
+
+     <div class="spacer" style="width: 284px; height: 22px;"></div>
+    <form class="list">
+      <label class="item item-input"> <span class="input-label">账号</span>
+        <input type="text" id="username" name="username" placeholder="请输入账号">
+      </label>
+      <label class="item item-input"> <span class="input-label">密码</span>
+        <input type="password" id="password" name="password" placeholder="请输入密码">
+      </label>
+    </form>
+    <button id="page1-button1" class="button button-positive  button-block" ng-click="doLogin()">
+      登录
+    </button>
+ 
+  </ion-content>
+</ion-view>
+
