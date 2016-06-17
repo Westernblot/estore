@@ -1,2 +1,2 @@
 # estore
-this is a  test  ionic project !
+这是一个 ionic 测试项目
