@@ -1,0 +1,38 @@
+<ion-view view-title="个人中心" style="background-color:#DDE1EE;">
+	<ion-content class="has-header" overflow-scroll="true" style="overflow: hidden">
+		<div class="spacer" style="width: 284px; height: 22px;"></div>
+		<ion-list>
+			<ion-item class="item-avatar">
+				<img src="img/y5b6cORTOCQF20CBdJHg_user.png">
+				<h2>{{fullname}}</h2>
+				<p style="white-space:normal;">
+					{{username}}
+				</p>
+			</ion-item>
+		</ion-list>
+		<div class="spacer" style="width: 284px; height: 22px;"></div>
+		<ion-list>
+			<ion-item class="item-icon-right" ng-click="updatePwdModal.show()">
+				修改密码
+				 <i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+			<ion-item class="item-icon-right" ng-click="aboutMe()">
+				关于劲酒
+				 <i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+			<ion-item class="item-icon-right" ng-click="toast('清理成功!')">
+				清除缓存
+				 <i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+			<ion-item class="item-icon-right" ng-click="toast('已经是最新版本了!')">
+				检查更新
+				 <i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+		</ion-list>
+		<div class="spacer" style="width: 284px; height: 20px;"></div>
+		<button id="page4-button2" class="button button-assertive  button-block" ng-click="logout()">
+			退出登录
+		</button>
+	</ion-content>
+
+</ion-view>

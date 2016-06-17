@@ -1,0 +1,24 @@
+<ion-modal-view >
+	<ion-header-bar class="bar bar-header bar-dark">
+		 <button class="button button-clear icon ion-ios-arrow-back" ng-click="updatePwdModal.hide()"></button>
+		 <h1 class="title">修改密码</h1>
+	</ion-header-bar>
+  <ion-content class="has-header" style="background-color:#DDE1EE;" scroll="false">
+		 <div class="spacer" style="width: 284px; height: 22px;"></div>
+		<form class="list">
+			<label class="item item-input"> <span class="input-label">原密码</span>
+				<input type="text" id="old" name="username" placeholder="请输入原密码" value="{{old}}">
+			</label>
+			<label class="item item-input"> <span class="input-label">新密码</span>
+				<input type="password" id="new1" name="password" placeholder="请输入新密码" value="{{new1}}">
+			</label>
+			<label class="item item-input"> <span class="input-label">重复新密码</span>
+				<input type="password" id="new2" name="password" placeholder="重复输入新密码" value="{{new2}}">
+			</label>
+		</form>
+		<button id="page1-button1" class="button button-positive  button-block">
+			修改
+		</button>
+	</ion-content>
+</ion-modal-view>
+
